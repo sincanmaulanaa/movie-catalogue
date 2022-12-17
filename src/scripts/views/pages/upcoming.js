@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 const Upcoming = {
   async render() {
     return `

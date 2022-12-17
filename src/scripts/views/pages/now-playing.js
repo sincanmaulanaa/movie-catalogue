@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 const NowPlaying = {
   async render() {
     return `
