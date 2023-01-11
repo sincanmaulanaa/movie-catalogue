@@ -1,6 +1,6 @@
 import CONFIG from '../globals/config';
 
-const cacheHelper = {
+const CacheHelper = {
   async cachingAppShell(requests) {
     const cache = await this._openCache();
     cache.addAll(requests);
@@ -20,7 +20,6 @@ const cacheHelper = {
       this._fetchRequest(request);
       return response;
     }
-
     return this._fetchRequest(request);
   },
 
@@ -39,10 +38,10 @@ const cacheHelper = {
     return response;
   },
 
-  async _addCaches(request) {
+  async _addCache(request) {
     const cache = await this._openCache();
     cache.add(request);
   },
 };
 
-export default cacheHelper;
+export default CacheHelper;
